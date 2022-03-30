@@ -28,13 +28,14 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
+
     - name: Install dependencies
       run: npm install
 
-      - name: Unit test
+    - name: Unit test
       run: npm run test:unit
 
-      - name: Upload Reports
+    - name: Upload Reports
       uses: actions/upload-artifact@v2
       with:
         name: Unit Test Results
