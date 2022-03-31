@@ -96,7 +96,7 @@ jobs:
     environment: 
       name: env
       url: https://github.com/natthanicha2539/sadosoda-tutorial-pipeline/actions/workflows/dev-tutorial-backend-deploy.yml
-    needs: [unitest,analyze] # if on env sit don't use !
+    needs: [unitest,analyze] # if on env sit don't use 
     
     steps:
     - name: Checkout code
