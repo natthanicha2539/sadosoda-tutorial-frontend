@@ -19,7 +19,7 @@ jobs:
   unitest:
     name: UnitTest
     runs-on: ubuntu-latest
-    environment: dev
+    environment: env
     steps:
     - name: Checkout code 
       uses: actions/checkout@v2
@@ -94,7 +94,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     environment: 
-      name: env
+      name: dev
       url: https://github.com/natthanicha2539/sadosoda-tutorial-pipeline/actions/workflows/dev-tutorial-backend-deploy.yml
     needs: [unitest,analyze] # if on env sit don't use 
     
